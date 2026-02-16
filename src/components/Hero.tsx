@@ -1,4 +1,3 @@
-
 export default function Hero() {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden" id="hero">
@@ -10,12 +9,18 @@ export default function Hero() {
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
                 <div className="flex justify-center items-center gap-8 mb-8 animate-fade-in-up">
                     <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-white shadow-xl flex items-center justify-center p-1 relative overflow-hidden group border-4 border-primary/20">
-                        <img alt="Geometric abstract logo pattern representing ASMAT" className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiKDbyXLRtrlthVm5w4RNy2UdQLi3iM3bdB9YwdMIL9gbS1UE7JPAeKVawofMW0p1wsZNmaObs7_rg_akX6hS1JPhFpPv2QrqHkcXi-9EnbK8LMmcucN0-rIEPcLd-ThFT8bb7Pp_mEooKyeAD346tBVa81vcO4kLXClNC1yfvjhYQdsFev0LCM4AHf9L7yDxWWTTpa_9i1T0BFQ2-iFIb6itGG4Lhku1T7LM3ka_V9RqmJV1-J-hGmsXp2Z4_ELniyoeLjr9TyhAL" />
-                        <div className="absolute inset-0 bg-primary/10 mix-blend-overlay rounded-full"></div>
+                        <img
+                            alt="Logo ASMAT"
+                            className="w-full h-full object-contain rounded-full group-hover:scale-110 transition-transform duration-500"
+                            src="/img/logo ASMAT.png"
+                        />
                     </div>
                     <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-white shadow-xl flex items-center justify-center p-1 relative overflow-hidden group border-4 border-primary/20">
-                        <img alt="Mathematical lambda symbol conceptual image" className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEnrAMaICT3gVPD1wajTNUbnsXoOQsoiAHrjxRAPg3ztK-mxqMZnPcHr83wu1x_urIHDklsbGa-2LHVlVV256EEHdqb_ZWPZMlixAOmgbboDDSdeYP6B5_x6m3pgaeXDQZB_2OXLNsO0HHevN7Au3iPxUTEhofKcsCwcLYxnZgqNcIdIOjKDLE8_Gf_eqxLMrOxC5Lmd-YiVPCJ0wK4iNQsWe_5eVc44msBWz3bu_CJS_eDJ_I0gcmVgEA_lymrGmfB9J3pVx9MgcB" />
-                        <div className="absolute inset-0 bg-primary/10 mix-blend-overlay rounded-full"></div>
+                        <img
+                            alt="Logo AKSENTUASI"
+                            className="w-full h-full object-contain rounded-full group-hover:scale-110 transition-transform duration-500"
+                            src="/img/Logo ASMAT AKSEN.jpeg"
+                        />
                     </div>
                 </div>
 

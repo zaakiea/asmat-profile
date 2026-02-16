@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "glass-card border-b border-red-100 dark:border-red-900/30" : "bg-transparent py-4 border-b border-transparent"}`}>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "glass-card border-b border-red-100 dark:border-red-900/30" : "glass-card border-b border-red-100 dark:border-red-900/30"}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     <div className="flex-shrink-0 flex items-center gap-2">
@@ -30,7 +31,7 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8 items-center">
-                        {["Hero", "About", "Vision", "Structure", "Divisions", "Programs"].map((item) => (
+                        {["Hero", "About", "Vision", "Structure", "Programs"].map((item) => (
                             <button
                                 key={item}
                                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -39,6 +40,7 @@ export default function Navbar() {
                                 {item === "Hero" ? "Home" : item}
                             </button>
                         ))}
+                        <ThemeToggle />
                         <Button
                             onClick={() => scrollToSection("contact")}
                             className="bg-primary text-white hover:bg-primary-dark px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md shadow-primary/20"
@@ -57,7 +59,11 @@ export default function Navbar() {
                             </SheetTrigger>
                             <SheetContent className="w-[300px] border-l-primary/10 bg-background-light dark:bg-surface-dark">
                                 <div className="flex flex-col gap-6 mt-10">
-                                    {["Hero", "About", "Vision", "Structure", "Divisions", "Programs", "Contact"].map((item) => (
+                                    <div className="flex items-center justify-between mb-4">
+                                        <span className="font-bold text-lg dark:text-white">Menu</span>
+                                        <ThemeToggle />
+                                    </div>
+                                    {["Hero", "About", "Vision", "Structure", "Programs", "Contact"].map((item) => (
                                         <button
                                             key={item}
                                             onClick={() => scrollToSection(item.toLowerCase())}

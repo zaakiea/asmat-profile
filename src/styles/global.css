@@ -216,4 +216,20 @@
     background-size: 24px 24px;
     opacity: 0.08;
   }
+
+  .tree-line-vertical {
+    width: 2px;
+    background-color: #d32f2f;
+    opacity: 0.3;
+    margin: 0 auto;
+  }
+
+  .tree-branch {
+    border-top: 2px solid rgba(211, 47, 47, 0.3);
+  }
+
+  .photo-frame {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 }

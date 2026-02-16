@@ -22,37 +22,37 @@ export default function Vision() {
                                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                                     <span className="material-icons">school</span>
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-300 text-sm">Meningkatkan kualitas akademik dan iklim prestatif mahasiswa.</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-sm">Mengoptimalkan kualitas internal yang profesional, adaptif, dan inklusif.</p>
                             </div>
                             <div className="flex items-start gap-4 group">
                                 <div className="w-10 h-10 rounded-lg bg-accent-green/10 flex items-center justify-center flex-shrink-0 text-accent-green group-hover:bg-accent-green group-hover:text-white transition-colors">
                                     <span className="material-icons">diversity_3</span>
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-300 text-sm">Mempererat kekeluargaan internal pengurus dan anggota.</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-sm">Mengoptimalkan pemanfaatan seluruh sumber daya.</p>
                             </div>
                             <div className="flex items-start gap-4 group">
                                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                                     <span className="material-icons">handshake</span>
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-300 text-sm">Membangun kemitraan strategis dengan pihak eksternal.</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-sm">Membangun lingkungan organisasi yang mendukung budaya bertumbuh.</p>
                             </div>
                             <div className="flex items-start gap-4 group">
                                 <div className="w-10 h-10 rounded-lg bg-accent-green/10 flex items-center justify-center flex-shrink-0 text-accent-green group-hover:bg-accent-green group-hover:text-white transition-colors">
                                     <span className="material-icons">lightbulb</span>
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-300 text-sm">Mewadahi kreativitas dan inovasi dalam berkarya.</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-sm">Menumbuhkan budaya kerja yang progresif.</p>
                             </div>
                             <div className="flex items-start gap-4 group">
                                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                                     <span className="material-icons">public</span>
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-300 text-sm">Memberikan kontribusi nyata kepada masyarakat luas.</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-sm">Mengoptimalkan program kerja yang relevan dan berdampak.</p>
                             </div>
                             <div className="flex items-start gap-4 group">
                                 <div className="w-10 h-10 rounded-lg bg-accent-green/10 flex items-center justify-center flex-shrink-0 text-accent-green group-hover:bg-accent-green group-hover:text-white transition-colors">
                                     <span className="material-icons">verified</span>
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-300 text-sm">Menjaga profesionalisme dan integritas organisasi.</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-sm">Menciptakan kesinambungan kinerja organisasi.</p>
                             </div>
                         </div>
                     </div>
