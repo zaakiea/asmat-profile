@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 interface Props {
 	title: string;
@@ -9,66 +9,28 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="id" class="scroll-smooth light">
+<html lang="id" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="ASMAT AKSENTUASI 2026 Official Profile" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="ASMAT AKSENTUASI 2026 - Asosiasi Mahasiswa Matematika Terapan Universitas Diponegoro" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		
-		<!-- Fonts -->
+		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+        
+        <script is:inline>
+            // Simple dark mode toggle logic based on system preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark');
+            }
+        </script>
 	</head>
-	<body class="bg-background-light text-slate-800 font-display transition-colors duration-300">
+	<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300">
 		<slot />
 	</body>
 </html>
-
-<style is:global>
-	:root {
-		--font-display: 'Lexend', sans-serif;
-	}
-	
-	.font-display {
-		font-family: var(--font-display);
-	}
-
-	.glass-card {
-		background: rgba(255, 255, 255, 0.85);
-		backdrop-filter: blur(16px);
-		-webkit-backdrop-filter: blur(16px);
-		border: 1px solid rgba(211, 47, 47, 0.15);
-		box-shadow: 0 4px 20px rgba(211, 47, 47, 0.05);
-	}
-	
-	.dark .glass-card {
-		background: rgba(45, 27, 27, 0.8);
-		border: 1px solid rgba(211, 47, 47, 0.2);
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-	}
-	
-	.math-pattern {
-		background-image: radial-gradient(#d32f2f 1.5px, transparent 1.5px);
-		background-size: 24px 24px;
-		opacity: 0.08;
-	}
-
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 5px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-</style>

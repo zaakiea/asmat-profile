@@ -9,27 +9,27 @@ import Divisions from '../components/Divisions.tsx';
 import Programs from '../components/Programs.tsx';
 import Gallery from '../components/Gallery.tsx';
 import Footer from '../components/Footer.tsx';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="ASMAT AKSENTUASI 2026 Official Profile">
 	<Navbar client:load />
-	<Hero />
-	<About />
-	<Vision />
-	<Structure />
-	<Divisions />
-    
-    <section id="programs" class="py-20 bg-white dark:bg-surface-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row gap-12">
-                <Programs client:visible />
-                <Gallery />
-            </div>
-        </div>
-    </section>
-
+	
+	<main class="overflow-hidden">
+		<Hero client:load />
+		<About client:visible />
+		<Vision client:visible />
+		<Structure client:visible />
+		<Divisions client:visible />
+		
+		<section id="programs" class="py-20 bg-white dark:bg-surface-dark">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex flex-col md:flex-row gap-12">
+					<Programs client:visible />
+					<Gallery client:visible />
+				</div>
+			</div>
+		</section>
+	</main>
+	
 	<Footer />
 </Layout>
