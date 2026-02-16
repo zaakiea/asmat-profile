@@ -1,26 +1,35 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.tsx';
+import Hero from '../components/Hero.tsx';
+import About from '../components/About.tsx';
+import Vision from '../components/Vision.tsx';
+import Structure from '../components/Structure.tsx';
+import Divisions from '../components/Divisions.tsx';
+import Programs from '../components/Programs.tsx';
+import Gallery from '../components/Gallery.tsx';
+import Footer from '../components/Footer.tsx';
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<Layout title="ASMAT AKSENTUASI 2026 Official Profile">
+	<Navbar client:load />
+	<Hero />
+	<About />
+	<Vision />
+	<Structure />
+	<Divisions />
+    
+    <section id="programs" class="py-20 bg-white dark:bg-surface-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12">
+                <Programs client:visible />
+                <Gallery />
+            </div>
+        </div>
+    </section>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+	<Footer />
+</Layout>
